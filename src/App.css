@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* MathJax, .mjx-chtml{
+    white-space: wrap !important;
+} */
+
+/* Default MathJax style (applies to all) */
+MathJax,
+.mjx-chtml {
+  white-space: normal !important; /* allow wrapping */
+  word-break: break-word; /* prevent overflow */
+}
+
+/* Special case: only inside #option */
+#option .mjx-chtml {
+  white-space: nowrap !important; /* keep in one line */
+  /* overflow-x: auto; enable scrolling */
+  display: block;
+}
